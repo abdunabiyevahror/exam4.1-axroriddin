@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Abdunabiyev Axroriddin</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="page-wrapper container">
+        <div class="nav-wrapper">
+          <nav class="navbar">
+          </nav>
+        </div>
+        <div id="wapper" class="checkbox_header checkbox_header-1">
+          <div class="style1">
+          </div>
+          <div id="event-change-1"></div>
+        </div> 
+        <div id="wapper" class="checkbox_header checkbox_header-2">
+          <div class="style1">
+            <select id="select-1" class="select">
+              <option value="all">BARCHASI</option>
+              <option value="false">YOLG'IZ</option>
+              <option value="true">OILALI</option>
+            </select>
+          </div>
+          <div id="event-change"></div>
+        </div>
+        <button class="btn add-teacher">MUALLIM QO'SHISH</button>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="container searching_data">
+           <div class="InputContainer">
+          <input
+            type="text"
+            name="text"
+            class="input"
+            id="search"
+            placeholder="Qidirish"
+          />
+          <label for="input" class="labelforsearch">
+            <svg viewBox="0 0 512 512" class="searchIcon">
+              <path
+                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+              ></path>
+            </svg>
+          </label>
+          <div class="border"></div>
+        </div>
+        </div>
+      </section>
+      <section id="teacher">
+        <div class="container">
+          <div class="card__row">
+          </div>
+          <div id="pagination-container"></div>
+        </div>
+      </section>
+         <div class="form_wrapper">
+          <form id="survey-form" class="teacher_form">
+            <div class="form-group">
+              <label id="name-label" for="name">ISM</label>
+              <input type="text" name="name" id="firstName" class="form-control" placeholder="FAMILIYA" required>
+            </div>
+            <div class="form-group">
+              <label id="name-label" for="name">FAMILIYA</label>
+              <input type="text" name="name" id="lastName" class="form-control" placeholder=" ISM" required>
+            </div>
+            <div class="form-group phone">
+              <label id="tel">TEL:RAQAM</label>
+              <input type="tel" id="phoneNumber" placeholder="RAQAM" value="" class="icon-left" />
+            </div>
+            <div class="form-group phone">
+              <label id="url">RASMINGIZ</label>
+              <input type="url" placeholder="URL" id="avatar" value="" class="icon-left" />
+            </div>
+            <div class="form-group phone">
+              <label id="text">GURUH</label>
+              <input type="text" placeholder="N13 N14 N18" id="group" value="N1,N2,N10" class="icon-left" />
+            </div>
+            <div class="form-group">
+              <label id="email-label" for="email">ELEKTRON POCHTA</label>
+              <input type="email" name="email" id="email" class="form-control" placeholder="POCHTA" required>
+            </div>
+            <div class="form-group">
+              <p class="label">TURMUSH QURGANMISIZ?</p>
+              <label class="df">
+                <input type="radio" id="isMarried" name="user-recommend" value="yes" class="input-radio" checked>
+              HA
+              </label>
+              <label class="df">
+                <input type="radio" name="user-recommend" value="no" class="input-radio">
+            YO'Q
+              </label>
+            </div>
+            <div class="form-group modal-buttons">
+              <button class="close-modal" onclick="closeModal()">YOPISH</button>
+              <button id="submit" class="submit-button"  type="submit">MUALLIM QO'SHISH</button>
+            </div>
+          </form>
+        </div>
+    </main>
+ 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/modal.js"></script>
+    <script src="js/header/header.js"></script>
+    <script src="js/const.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/teacher-row.js"></script>
+
+  </body>
+</html>
