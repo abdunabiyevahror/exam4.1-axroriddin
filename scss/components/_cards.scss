@@ -279,6 +279,7 @@
 .simple-pagination li {
   display: inline-block;
   margin-right: 5px;
+  width: 500px;
 }
 .simple-pagination ul {
   margin: 65px auto;
@@ -292,22 +293,21 @@
   text-decoration: none;
   font-size: 15px;
   border: 1px solid #eee;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
+  background-color: greenyellow;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 10px;
   margin-right: 25px;
 }
 .simple-pagination .current {
   color: #fff;
-  background-color: #3232ff;
-  border-color: #4033ff;
+ background-color: greenyellow;
 }
 .simple-pagination .prev.current,
 .simple-pagination .next.current {
-  background: #0611b4;
+ background-color: greenyellow;
 }
- 
+.std-btn{
+  
+}

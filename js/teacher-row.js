@@ -48,6 +48,11 @@
                     }</span></div>
                 </li>
                 </ul>
+                 <div class="cta">
+            <button class="std-btn"><a class="btn" href="students.html?teacher=${id}" >Students</a> </button>
+                  <button class="close-modal" onclick="closeModal()">Edit</button>
+                  <button class="btn" onclick = "deleteTeacher()">Delete</button>
+                </div>
             </div>
        
     `;
